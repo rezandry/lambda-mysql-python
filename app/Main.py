@@ -1,6 +1,6 @@
 import traceback
 
-from app.controller.MemberController import SampleController
+from app.controller.MemberController import MemberController
 from app.exception.BaseExceptionHandler import BaseExceptionHandler
 from app.util.App import App
 from app.util.Request import Request
