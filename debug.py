@@ -18,7 +18,7 @@ get_members = {
 	"queryStringParameters": {}
 }
 
-data = get_members
+data = get_member
 
 if data.get('body') or isinstance(data.get('body'), dict):
     data['body'] = json.dumps(data['body'])

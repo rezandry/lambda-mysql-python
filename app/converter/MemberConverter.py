@@ -17,7 +17,10 @@ class MemberConverter:
 
     @classmethod
     def get_members_result(cls, inputs):
-        result = []
+        results = []
         for each_member in inputs:
-            result.append(cls.get_member_result(each_member))
-        return result
+            get_member_response = GetMemberResponse()
+            get_member_response.id = each_member['id']
+            get_member_response.nickname = each_member['nama']
+            results.append(vars(get_member_response))
+        return results
