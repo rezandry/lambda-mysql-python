@@ -27,7 +27,7 @@ class UserRepository(BaseMysql):
 
         conn = BaseMysql()
         cursor = conn._get_cursor()
-        cursor.execute(query, [id])
+        cursor.execute(query)
         result = cursor.fetchall()
         conn._close_cursor()
         conn._close_connection()

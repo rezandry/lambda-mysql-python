@@ -2,7 +2,7 @@ import application
 import json
 import time
 
-data = {
+get_member = {
 	"path": "/member",
 	"httpMethod": "GET",
 	"headers": {},
@@ -10,6 +10,15 @@ data = {
 		"id": 2
 	}
 }
+
+get_members = {
+	"path": "/members",
+	"httpMethod": "GET",
+	"headers": {},
+	"queryStringParameters": {}
+}
+
+data = get_members
 
 if data.get('body') or isinstance(data.get('body'), dict):
     data['body'] = json.dumps(data['body'])
