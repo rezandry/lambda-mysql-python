@@ -3,10 +3,12 @@ import json
 import time
 
 data = {
-	"path": "/hello",
+	"path": "/member",
 	"httpMethod": "GET",
 	"headers": {},
-	"queryStringParameters": {}
+	"queryStringParameters": {
+		"id": 2
+	}
 }
 
 if data.get('body') or isinstance(data.get('body'), dict):
