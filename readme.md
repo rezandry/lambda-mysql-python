@@ -24,6 +24,9 @@ This project support debug locally with mock request in debug.py
 
 #### How to debug?
 Just type and enter `python debug.py` on your terminal
+
+#### Add library
+If you need add dependency library, just execute this `pip install <package_name> --target vendor/`
 ```
 Maintainer : Reza Andriyunanto
 

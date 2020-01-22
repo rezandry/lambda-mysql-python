@@ -1,4 +1,4 @@
-import pymysql
+from vendor import pymysql
 from app.config.Mysql import Mysql
 
 class BaseMysql:
