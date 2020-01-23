@@ -30,5 +30,7 @@ class MemberService:
         }
 
         lambda_invoke = LambdaInvoke()
-        response = lambda_invoke.lambda_name('python-function').payload(payload).invoke_lambda()
-        return response
+        response = lambda_invoke.lambda_name('python-function')\
+            .payload(payload)\
+            .invoke_lambda()
+        return BaseResultVO(result=response)

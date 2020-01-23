@@ -18,7 +18,14 @@ get_members = {
 	"queryStringParameters": {}
 }
 
-data = get_member
+get_another_lambda = {
+	"path": "/another-lambda",
+	"httpMethod": "GET",
+	"headers": {},
+	"queryStringParameters": {}
+}
+
+data = get_another_lambda
 
 if data.get('body') or isinstance(data.get('body'), dict):
     data['body'] = json.dumps(data['body'])
