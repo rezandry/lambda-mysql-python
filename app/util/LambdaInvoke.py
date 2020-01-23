@@ -28,7 +28,7 @@ class LambdaInvoke:
                                                  Payload=json.dumps(self.__payload))
             response = response['Payload'].read()
             response = json.loads(response)
-            return response['body']
+            return response
         except Exception as e:
             print(e)
             response = 'Invocation Failed'
