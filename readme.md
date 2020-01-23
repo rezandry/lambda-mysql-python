@@ -8,6 +8,8 @@ This project support debug locally with mock request in debug.py
     - Here all your config file belong
 - Controller
     - Control your api path to specific service
+- Converter
+    - Module for convert one object to another object
 - Decorator
     - Here all your decorator file belong
 - Exception
@@ -21,6 +23,13 @@ This project support debug locally with mock request in debug.py
 
 #### Requirement
 - Python 3.xx
+
+#### Library dependency
+- Boto3
+- PyMysql
+
+#### Configuration
+- Set all configuration on app/config
 
 #### How to debug?
 Just type and enter `python debug.py` on your terminal
