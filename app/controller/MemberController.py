@@ -15,3 +15,8 @@ class MemberController:
     @Api.route(path='/members', method='GET')
     def get_members(cls):
         return cls.__service.get_members()
+
+    @classmethod
+    @Api.route(path='/another-lambda', method='GET')
+    def get_members(cls):
+        return cls.__service.get_another_lambda()

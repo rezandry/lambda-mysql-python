@@ -9,6 +9,10 @@ class MemberConverter:
         return App.request.query
 
     @classmethod
+    def get_invocation_lambda(cls):
+        return App.request.query if App.request.query else 'Query blank'
+
+    @classmethod
     def get_member_result(cls, input):
         get_member_response = GetMemberResponse()
         get_member_response.id = input['id']
