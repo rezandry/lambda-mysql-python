@@ -22,7 +22,9 @@ get_another_lambda = {
 	"path": "/another-lambda",
 	"httpMethod": "GET",
 	"headers": {},
-	"queryStringParameters": {}
+	"queryStringParameters": {
+		"name": "Narindo"
+	}
 }
 
 data = get_another_lambda
